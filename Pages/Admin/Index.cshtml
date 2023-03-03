@@ -1,0 +1,34 @@
+﻿@page
+@model RestoPizza.Pages.Admin.IndexModel
+@{
+}
+
+<h1> Authentification</h1>
+
+@if (Model.displayFlashMessage)
+{    
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  <strong>Erreur!</strong> Identifiant ou mot de passe invalide.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+}
+
+<form method="post">
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+        <input type="text" id="username" name="username" class="form-control" />
+        <label class="form-label" for="username">Identifiant</label>
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+        <input type="password" id="password" name="password" class="form-control" />
+        <label class="form-label" for="password">Mot de passe</label>
+    </div>
+
+    <!-- Submit button -->
+    <button class="btn btn-primary btn-block mb-4">Connexion</button>
+
+</form>
