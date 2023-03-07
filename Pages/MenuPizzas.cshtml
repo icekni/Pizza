@@ -1,0 +1,29 @@
+﻿@page
+@model RestoPizza.Pages.MenuPizzasModel
+@{
+    ViewData["Title"] = "Carte des pizzas";
+}
+
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+
+<body>
+    <div class="text-center">
+        <h1>@ViewData["Title"]</h1>
+
+        <a asp-page="Index">Retour à l'accueil</a>
+    </div>
+
+    <ul>
+        @foreach (var pizza in Model.Pizzas) 
+        {
+        <li>
+            @Html.DisplayFor(modelItem => pizza.nom)
+        </li>
+        }
+    </ul>
+
+</body>
+</html>
