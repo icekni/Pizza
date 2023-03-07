@@ -5,8 +5,28 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Formation\\source\\repos\\Pizza\\Pizza\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\Formation\\source\\repos\\Pizza\\Pizza\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Formation\\source\\repos\\Pizza\\Pizza\\wwwroot\\images\\main_background.jpg",
+      "PackagePath": "staticwebassets\\images\\main_background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Formation\\source\\repos\\Pizza\\Pizza\\wwwroot\\images\\main_logo.png",
+      "PackagePath": "staticwebassets\\images\\main_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Formation\\source\\repos\\Pizza\\Pizza\\wwwroot\\images\\menu_background.jpg",
+      "PackagePath": "staticwebassets\\images\\menu_background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Formation\\source\\repos\\Pizza\\Pizza\\wwwroot\\images\\small_logo.png",
+      "PackagePath": "staticwebassets\\images\\small_logo.png"
     },
     {
       "Id": "C:\\Users\\Formation\\source\\repos\\Pizza\\Pizza\\wwwroot\\js\\site.js",

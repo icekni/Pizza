@@ -4,16 +4,7 @@
     ViewData["Title"] = "Pizza Accueil";
 }
 
-<html>
-<head>
-    <title>@ViewData["Title"]</title>
-</head>
-
-<body>
-    <div class="text-center">
-        <h1 class="display-4">@ViewData["Title"]</h1>
-        <a asp-page="MenuPizzas">Voir la carte</a>
+    <div class="main">
+        <img src="~/images/main_logo.png" class="main_logo"/>
+        <a asp-page="MenuPizzas" class="main_link">Voir la carte</a>
     </div>
-
-</body>
-</html>

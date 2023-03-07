@@ -4,26 +4,25 @@
     ViewData["Title"] = "Carte des pizzas";
 }
 
-<html>
-<head>
-    <title>@ViewData["Title"]</title>
-</head>
+    <div class="menu">
+        <a asp-page="Index"><img class="logo" src="~/images/small_logo.png" /></a>
+    <div><h1>@ViewData["Title"]</h1></div>
 
-<body>
-    <div class="text-center">
-        <h1>@ViewData["Title"]</h1>
-
-        <a asp-page="Index">Retour à l'accueil</a>
+        <ul>
+            @foreach (var pizza in Model.Pizzas)
+            {
+                <li class="pizza">
+                    <div class="pizza_title">@Html.DisplayFor(modelItem => pizza.nom) <span class="pizza_price"> @pizza.prix.ToString("0.00") €</span></div>
+                    <div class="pizza_ingredients">
+                    @Html.DisplayFor(modelItem => pizza.ingredients)
+                    </div>
+                    @if (pizza.vegetarienne)
+                    {
+                    <div class="pizza_vegetarienne">
+                        végétarienne
+                    </div>
+                    }
+            </li>
+            }
+        </ul>
     </div>
-
-    <ul>
-        @foreach (var pizza in Model.Pizzas) 
-        {
-        <li>
-            @Html.DisplayFor(modelItem => pizza.nom)
-        </li>
-        }
-    </ul>
-
-</body>
-</html>

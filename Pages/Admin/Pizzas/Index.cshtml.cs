@@ -14,9 +14,9 @@ namespace RestoPizza.Pages.Admin.Pizzas
     [Authorize]
     public class IndexModel : PageModel
     {
-        private readonly RestoPizza.Data.DataContext _context;
+        private readonly DataContext _context;
 
-        public IndexModel(RestoPizza.Data.DataContext context)
+        public IndexModel(DataContext context)
         {
             _context = context;
         }
